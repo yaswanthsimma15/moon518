@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ch. Rohithi Vennela Devi — Always My Vennela 🌙</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND AUDIO (Place your audio file named 'song.mp3' in the same folder) -->
+    <audio id="bg-music" src="song.mp3" autoplay loop preload="auto"></audio>
+
+    <!-- FLOATING MUSIC PLAYER PILL -->
+    <div id="music-pill" title="Play or Pause Music">
+        <div class="equalizer" id="equalizer">
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <span id="music-label">Playing Song...</span>
+    </div>
+
+    <!-- ANIMATED NIGHT SKY CANVAS (Stars, Hearts & Shooting Stars) -->
+    <canvas id="sky-canvas"></canvas>
+
+    <!-- 1. HERO WELCOME WITH MOONLIGHT ANIMATION -->
+    <header class="hero">
+        <div class="moon-stage">
+            <div class="moon-aura"></div>
+            <div class="moon-orbit"></div>
+            <div class="moon" title="Ch. Rohithi Vennela Devi — Naa Vennela">
+                <div class="crater c1"></div>
+                <div class="crater c2"></div>
+                <div class="crater c3"></div>
+            </div>
+        </div>
+
+        <div class="welcome-badge">Welcome, Ch. Rohithi Vennela Devi 🌙</div>
+        <h1 id="typewriter-title"></h1>
+        <p class="hero-sub">
+            Manam ipudu kalisi lekapovachu <span class="highlight">Rohithi</span>, kani naa prathi roju lo, prathi alochana lo nuvve unnav. 
+            Nee peru lone <strong>"Vennela"</strong> undi... naa cheekati jeevitham lo velugu kuda nuvve.
+        </p>
+        <div class="hero-links">
+            <a href="#our-story" class="scroll-btn">Read My Heart ↓</a>
+            <a href="#her-beauty" class="scroll-btn secondary">Nee Andam ✨</a>
+        </div>
+    </header>
+
+    <!-- 2. HEARTFELT EXPLANATION IN TELUGU-ENGLISH -->
+    <section id="our-story" class="story-section">
+        <div class="glass-card reveal">
+            <h2>Dear Ch. Rohithi Vennela Devi ❤️</h2>
+            
+            <p>
+                Hi <span class="highlight">Rohithi</span>... Ela unnav? Nuvvu ee website open chesav ante naaku chala santhosham ga undi. 
+                Manam <span class="highlight">breakup</span> ayyam ani naku telusu, manam matladukokunda chala rojulu ayyindi. 
+                Kani nijam cheppalante, ninnu marchipovadam naa valla kavatledu.
+            </p>
+
+            <p>
+                Mana madhya chinna chinna godavalu, misunderstandings vachayi. Appudu nenu sarigga matladalekapoya, 
+                lekapothe ninnu hurt chesuntanu. <span class="highlight">Daaniki nenu nijanga sorry cheptunnanu.</span> 
+                Kani aa godavala kanna, manam kalisi navvukunna kshanalu naaku ekkuva gurthostunnayi.<
+            </p>
+         
+            <p>
+                Aakasam lo aa <span class="highlight">Chandamama (Moon)</span> entha dooram lo unna, daani <span class="highlight">Vennela</span> mana meeda paduthune untundi. 
+                Nuvvu naaku dooram ga unna, naa prema eppatiki neethone untundi. Nuvvu malli naa jeevitham loki vasthe, 
+                ee sari ninnu eppudu badhapettakunda chusukuntanu, Rohithi.
+            </p>
+
+            <div class="signature"></div>
+        </div>
+    </section>
+
+    <!-- 3. COMPLIMENTING HER BEAUTY SECTION -->
+    <section id="her-beauty" class="story-section">
+        <div class="glass-card beauty-card reveal">
+            <div class="section-tag">About Your Beauty ✨</div>
+            <h2>Rohithi — Nuvvu Oka Andamaina Kavitha</h2>
+            <p>
+                Nijam cheppalante, ee prapancham lo nenu chusina అత్యంత andamaina ammayi nuvve <span class="highlight">Rohithi</span>. 
+                Nee kallalo unna aa merupu, nuvvu navvinappudu nee mukham lo vache aa velugu... 
+                aa <span class="highlight">Chandamama kuda nee mundu chinna boinaatte untundi</span>.
+            </p>
+            <p>
+                Nee peru lo unna <span class="highlight">Vennela</span> laage nuvvu chala prashantham ga, chala andam ga untav. 
+                Nuvvu simple ga unna, traditional dress lo unna, leda kopam ga chusina kuda chala mudduga untav. 
+                Devudu ninnu chala pratyekanga chesadu... <span class="highlight">You are truly gorgeous, inside and out.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. OUR 20 COUPLE PHOTOS GALLERY -->
+    <section id="couple-memories" class="gallery-section">
+        <div class="gallery-header reveal">
+            <h2>Manam Kalisi Unna 20 Sweet Memories</h2>
+            <p>Click any photo to view full screen • Prathi photo venuka mana prema undi...</p>
+        </div>
+        <div class="photo-grid" id="couple-grid"></div>
+    </section>
+
+    <!-- 5. HER 15 SINGLE PHOTOS GALLERY WITH COMPLIMENTS -->
+    <section id="her-photos" class="gallery-section">
+        <div class="gallery-header reveal">
+            <h2>Rohithi's 15 Beautiful Photos 🌙</h2>
+            <p>Naa favorite person — Prathi photo lo nuvvu devatha la unnav...</p>
+        </div>
+        <div class="photo-grid" id="single-grid"></div>
+    </section>
+
+    <!-- 6. OUR 4 SPECIAL VIDEOS AT THE ENDING -->
+    <section id="our-videos" class="video-section">
+        <div class="gallery-header reveal">
+            <h2>Mana 4 Unforgettable Videos 🎬</h2>
+            <p>Mana navvulu, mana matalu — Eppatiki marchipoleni kshanalu...</p>
+        </div>
+        <div class="video-grid" id="video-grid"></div>
+    </section>
+
+    <!-- FULLSCREEN PHOTO LIGHTBOX -->
+    <div id="lightbox">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Memory">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Made with all my heart for <span>Ch. Rohithi Vennela Devi</span> • Nuvvu eppatiki naa Vennela 🌙❤️
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
